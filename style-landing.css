@@ -1,0 +1,58 @@
+@font-face {
+    font-family: halftone;
+    src: url("/fonts/MyFontsWebfontsKit/webFonts/RigBoldHalftone/font.woff");
+  }
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+  /* font-family: 'Roboto', sans-serif; */
+
+body {
+    background-color: #457960;
+}
+
+.container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+container h1 {
+    font-family: halftone;
+    font-size: 100px;
+    color: #2b2a28;
+    text-align: center;
+}
+
+container p {
+    font-family: halftone;
+    font-size: 50px;
+    color: #2b2a28;
+    text-align: center;
+}
+
+.landing-container {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* button style */
+
+.btn {
+    background: rgb(178, 219, 159);
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: #2b2a28;
+    border: none;
+    border-radius: 100px;
+    padding: 20px;
+}
+
+.btn:hover {
+    background: #2a4b3b;
+}
+
+
+

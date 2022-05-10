@@ -1,0 +1,161 @@
+@font-face {
+  font-family: halftone;
+  src: url("/fonts/MyFontsWebfontsKit/webFonts/RigBoldHalftone/font.woff");
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+/* font-family: 'Roboto', sans-serif; */
+
+body, html {
+  height: 100vh;
+}
+
+
+body {
+  margin: 0;
+  display: grid;
+  grid-template-columns: 21% 15% 20% 30% 21% ;
+  grid-template-rows: 10% auto auto 10%;
+  grid-template-areas: 
+    "sidebar subtext header header aside"
+    "sidebar subtext main-img main-img aside"
+    "sidebar subtext main main aside"
+    "sidebar footer footer footer aside";
+}
+
+
+/* right sidebar */
+
+rightside {
+  grid-area: aside;
+  background-color:#faf3e0;
+}
+
+/* sidebar */
+aside {
+  grid-area: sidebar;
+}
+
+.aside-text-h {
+  transform: rotate(-90deg);
+  transform-origin:bottom right;
+  padding-top: 100px;
+}
+
+.aside-text-h h1 {
+  font-family: halftone;
+  color: #28282B;
+  line-height: 130px;
+}
+
+/* subtext */
+
+subtext {
+  grid-area: subtext;
+  background-color:#faf3e0;
+}
+
+.sub-text {
+  font-family: 'Roboto', sans-serif;
+  color:#28282B;
+  font-size: 25px;
+  transform: rotate(-90deg);
+  transform-origin:bottom;
+  padding-top: 550px;
+  margin-left: -100px;
+}
+
+
+/* navbar */
+header {
+  grid-area: header;
+  background-color:#faf3e0;
+}
+
+
+.navbar {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  justify-items: center;
+
+}
+
+.navbar a {
+  font-family: halftone;
+  text-decoration: none;
+  color: #28282B;
+  font-size: 4rem;
+  padding: 20px;
+}
+
+#menu-item-wed:hover {
+	color: #5c86af;
+}
+#menu-item-thu:hover {
+	color: #ff914d;
+}
+#menu-item-fri:hover {
+	color: #ffde59;
+}
+#menu-item-sat:hover {
+	color: #03989e;
+}
+#menu-item-sun:hover {
+	color: #b071c2;
+}
+
+/* main image  */
+
+main-img {
+  grid-area: main-img;
+  background-color:#faf3e0;
+  display: flex;
+  align-items: center;
+  padding-left: 100px;
+  padding-top: 100px;
+}
+
+.home-image {
+  width: 800px;
+}
+
+
+/* paragraph of info */
+main {
+  grid-area: main;
+  background-color: #faf3e0;
+  text-align: center;
+}
+
+main p {
+  font-family: 'Roboto', sans-serif;
+  color:#28282B;
+  font-size: 20px;
+}
+
+
+/* footer */
+footer {
+  grid-area: footer;
+  background-color:#faf3e0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Viewports between 320px and 480px wide */
+
+/* @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .card {
+    background: #bada55;
+  }
+} */
